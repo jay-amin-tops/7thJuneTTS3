@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>My form</legend>
+        <form action="savedata.php" method="post" enctype="multipart/form-data">
+            <table align="center" border="1"> 
+                <tr>
+                    <td>User Name</td>
+                    <td><input type="text" placeholder="Enter User Name" autocomplete="off" value="TOPS" name="username" id="username" ></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password" required id="password"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" placeholder="text@test.com" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>Mobile</td>
+                    <td><input type="tel" pattern="[0-9]+" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>DOB</td>
+                    <td><input type="date" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>Joining Month</td>
+                    <td><input type="month" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>Joining Week</td>
+                    <td><input type="week" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>Salary</td>
+                    <td><input type="range" min="10" max="1000" value="500" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>
+                        <textarea name="address" id="" cols="50" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td>
+                        <select name="city" id="city">
+                            <option value=""></option>
+                            <option value="1">Ahemdabad</option>
+                            <option value="2">Surat</option>
+                            <option value="3">Baroda</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Education</td>
+                    <td>
+                        <select name="education" multiple id="education">
+                            <option value=""></option>
+                            <option value="1">10th</option>
+                            <option value="2">12th</option>
+                            <option value="3">BCA</option>
+                            <option value="3">MCA</option>
+                            <option value="3">M.phill</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>profile picture</td>
+                    <td>
+                        <input type="file" accept="image/*" name="" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>
+                        <input type="number"  name="" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Color</td>
+                    <td>
+                        <input type="color" name="" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Search</td>
+                    <td>
+                        <input type="search" name="" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>URL</td>
+                    <td>
+                        <input type="url" name="" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="Male" id="">Male
+                        <input type="radio" name="gender" value="Female" id="">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobbies</td>
+                    <td>
+                        <input type="checkbox" name="chk[]" value="Cricket" id="">Cricket
+                        <input type="checkbox" name="chk[]" value="Music" id="">Music
+                        <input type="checkbox" name="chk[]" value="Reading" id="">Reading
+                        <input type="checkbox" name="chk[]" value="Travelling" id="">Travelling
+                    </td>
+                </tr>
+                <tr>
+                    <td>ReadOnly</td>
+                    <td>
+                        <input type="text" value="Somedata" readonly name="" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Diabled</td>
+                    <td>
+                        <input type="text" value="Somedata" disabled name="" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="hidden" value="Key" name="" id="">
+                        <input type="submit" name="" id="">
+                        <input type="reset" value="Cancel" name="" id="">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get">
+        <input type="text" name="username" id="">
+        <input type="password" name="password" id="">
+        <input type="submit" value="Send" name="" id="">
+    </form>
+    <form method="post">
+        <input type="text" name="username" id="">
+        <input type="password" name="password" id="">
+        <input type="submit" value="Send" name="" id="">
+    </form>
+    <form method="post" enctype="multipart/form-data">
+        <input type="text" name="username" id="">
+        <input type="password" name="password" id="">
+        <input type="file" name="profilepic" id="">
+        <input type="submit" value="Send" name="" id="">
+    </form>
+    <form method="post" action="serverpage.php" enctype="multipart/form-data">
+        <input type="text" name="username" id="">
+        <input type="password" name="password" id="">
+        <input type="file" name="profilepic" id="">
+        <input type="submit" value="Send" name="" id="">
+    </form>
+    <h1>Form</h1>
+    <p>form tag will helps to send client data to the server</p>
+    <p>There are two methods for sending data to the server</p>
+    <p>name attribute is helps to send data</p>
+    <ol>
+        <li>GET</li>
+        <li>POST</li>
+    </ol>
+    <h2>GET</h2>
+    <p>will use URL for sending data to the server thats why get method is less secure</p>
+    <p>limitation 2048 char only</p>
+    <p>not supported file uploading</p>
+    <p>we can bookmark get data with URL</p>
+    <p>get will reload page with prev data</p>
+    <p>faster than post 90% searching will be done by get methods</p>
+    <p>? => query string   </p>
+    <p>& => multiple data</p>
+    <h2>POST</h2>
+    <p>will not using URL for sending data to the server thats why get method is secure</p>
+    <p>no limitation </p>
+    <p>supported file uploading</p>
+    <p>we can't bookmark post data with URL</p>
+    <p>get will not able to do reload page with prev data</p>
+    <p>slower than get</p>
+
+</body>
+</html>

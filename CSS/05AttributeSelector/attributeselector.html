@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* <a> elements with a title attribute START*/
+        a[title] {
+            border: 2px solid orangered;
+        }
+
+        /* <a> elements with a title attribute END*/
+
+        /* <a> elements with an href matching "https://example.org" START*/
+        a[href="https://www.tops-int.com"] {
+            font-weight: bolder;
+        }
+
+        /* <a> elements with an href matching "https://example.org" END*/
+
+        /* <a> elements with an href containing "example" START*/
+        a[href*="example"] {
+            font-size: 2em;
+        }
+
+        /* <a> elements with an href containing "example" END*/
+
+        /* <a> elements with an href ending ".org" START */
+        a[href$=".in"] {
+            font-style: italic;
+            background: linear-gradient(orange, white, green);
+        }
+
+        /* <a> elements with an href ending ".org" END*/
+
+        /* <a> elements whose class attribute contains the word "logo" */
+        a[class~="logo"] {
+            padding: 2px;
+            font-size: 36px;
+        }
+        /* <a> elements whose class attribute contains the word "logo" */
+    </style>
+</head>
+
+<body>
+    <a href="">click here</a>
+    <a href="">This is Link</a>
+    <a href="https://www.tops-int.com">website title</a>
+    <a accesskey="h" title="alt+h" href="https://www.google.com">Google</a>
+    <a href="https://www.home.com">Home</a>
+    <a href="example">About</a>
+    <a href="https://www.example.com">contact</a>
+    <a href="https://www.aa.in">india</a>
+    <a href="https://www.inexample.com">contact</a>
+    <a class="logo" href="#">MySite</a>
+</body>
+
+</html>
