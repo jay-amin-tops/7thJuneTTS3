@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .flex-direction-row {
+            flex-direction: row
+        }
+
+        .flex-direction-row-reverse {
+            flex-direction: row-reverse
+        }
+
+        .flex-direction-column {
+            flex-direction: column
+        }
+
+        .flex-direction-column-reverse {
+            flex-direction: column-reverse
+        }
+
+        .col-50 {
+            width: 49.7%;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+        }
+
+        .flex-flow {
+            flex-flow: column wrap;
+        }
+
+        .justify-content {
+            height: 100px;
+            /* justify-content: baseline; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            justify-content: space-evenly;
+
+        }
+
+        .align-items {
+            height: 100px;
+            /* align-items: baseline; */
+            align-items: center;
+        }
+
+        .flexgap {
+            height: 100px;
+            /* gap: 10px; */
+            gap: 10px 20px;
+            /* row-gap column gap */
+            /* row-gap: 10px;
+            column-gap: 20px; */
+        }
+        .col-grow{
+            flex-grow: 4; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-row</h2>
+    <div class="row flex-direction-row">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-row-reverse</h2>
+    <div class="row flex-direction-row-reverse">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-column</h2>
+    <div class="row flex-direction-column">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-column-reverse</h2>
+    <div class="row flex-direction-column-reverse">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-wrap</h2>
+    <div class="row flex-wrap">
+        <div class="col-50">Col1</div>
+        <div class="col-50">Col2</div>
+        <div class="col-50">Col3</div>
+    </div>
+    <div class="row flex-flow">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> justify-content</h2>
+    <div class="row justify-content">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> align-items</h2>
+    <div class="row align-items">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> flexgap</h2>
+    <div class="row flexgap">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> flex Grow</h2>
+    <div class="row">
+        <div class="col-grow">Col1</div>
+        <div class="col-grow">Col2</div>
+        <div class="col-grow">Col3</div>
+    </div>
+    .item {
+        flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+      }
+</body>
+
+</html>
