@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for (let index = 0; index < 10; index++) {
+        //     for (let j = 0; j <= index; j++) {                
+        //         // console.log("*");
+        //         document.write(" * ")
+        //     }
+        //     document.write("<br>")
+        // }
+        whiledata = 0
+        while (whiledata <10) {
+            console.log(whiledata );
+            whiledata ++;
+        }
+        dowhiledata = 50
+        do {
+            console.log(dowhiledata);
+        } while (dowhiledata < 10);
+
+        // for array access
+        array = [121,54,54,45] 
+        array.forEach(element => {
+            console.log(element);
+        });
+        for (const key in array) {
+            
+            console.log(key);
+            console.log(array[key]);
+        }
+        for (const iterator of array) {
+            console.log(iterator);
+            
+        }
+    </script>
+</body>
+</html>

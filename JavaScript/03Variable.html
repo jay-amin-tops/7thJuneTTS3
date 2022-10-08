@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Vari+able / container for holding some values and it may diff through-out the programm execution</p> 
+    <p>the thing which is able to hold verities of data</p>
+    <p>ways to declare variable</p>
+    <ul>
+        <li>var keyword var username = "TOPS" variable declaration with assignment</li>
+        <li>let keyword</li>
+        <li>const keyword (not variable but hold data with fixed value throughout the programm execution)</li>
+    </ul>
+    <script>
+        // var username = "TOPS" // declaration with init val
+        // var username = "TOPS Techno" //re-declaration Supported
+        // username = "TOPS Technologies SG" //re-assignment Supported
+        // console.log(username);
+
+
+        // let letusername = "TOPS"
+        // let letusername = "TOPS Tech" //Uncaught SyntaxError: Identifier 'letusername' has already been declared 
+        // letusername = "TOPS Tech" //re-assignment possible
+        // console.log(letusername);
+        // const constusername = "TOPS"
+        // const constusername = "TOPS test" //Uncaught SyntaxError: Identifier 'constusername' has already been declared
+        // constusername = "TOPS test" //Assignment to constant variable.
+        // console.log(constusername);
+        //  for (let index = 0; index < 10; index++) {
+        //     console.log(index);
+        // }
+        // console.log(index); //Uncaught ReferenceError: index is not defined
+         for (var index = 0; index < 10; index++) {
+            console.log(index);
+        }
+        console.log(index); //Uncaught ReferenceError: index is not defined
+    </script>
+</body>
+</html>

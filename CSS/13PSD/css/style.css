@@ -97,7 +97,7 @@ nav ul li {
 }
 
 .header-img {
-    width: 500px;
+    width: 100%;
 }
 
 .btn-primary {
@@ -166,7 +166,7 @@ nav ul li {
 }
 
 #bg-preg-wmn p {
-    width: 561px;
+    width: 100%;
     font-size: 21px;
     letter-spacing: 0px;
     line-height: 33px;

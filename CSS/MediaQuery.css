@@ -3,6 +3,9 @@
         width: 540px;
     }
 
+    #bg-preg-wmn p {
+        width: 100%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -30,7 +33,14 @@
     #bg-preg-wmn {
         background: url(13PSD/images/prgntwmn.png);
     }
-    
+
+    #bg-preg-wmn p {
+        width: 515px;
+    }
+
+    .header-img {
+        width: 500px;
+    }
 }
 
 @media (min-width: 992px) {

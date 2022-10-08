@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border-effect {
+            position: relative;
+        }
+
+        .border-effect::after {
+            content: " ";
+            position: absolute;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: grey;
+            animation: text-anim 3s infinite;
+        }
+
+        @keyframes text-anim {
+            0% {
+                width: 0px;
+                /* border-bottom: 0px solid ; */
+            }
+
+            100% {
+                width: 100px;
+                /* border-bottom: 100px solid ; */
+            }
+        }
+
+        .overflowhid {
+            overflow: hidden;
+        }
+
+        .border-round {
+            border: 5px solid goldenrod;
+            border-radius: 20px 0px 20px 0;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        .masked {
+            width: 100px;
+            height: 100px;
+            background-color: #8cffa0;
+            -webkit-mask-image: url(bg.png);
+            mask-image: url(bg.png);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="masked"></div> 
+    <div class="overflowhid">
+        <a class="border-effect">Something</a>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore dolorum excepturi dolores ab unde sunt nobis
+            alias ratione, ex minus consequuntur eaque assumenda, quidem sed nisi odio beatae impedit error.</p>
+        <a class="border-round" href="">Something</a>
+    </div>
+
+</body>
+
+</html>

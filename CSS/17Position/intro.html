@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div[class*="box"] {
+            height: 400px;
+            width: 400px;
+        } */
+
+        .box1 {
+            background-color: tan; position: absolute; top:50px; left:50px;
+            z-index: 10;
+        }
+
+        .box2 {
+            background-color: brown; position: absolute; top:90px; left:90px;
+            z-index: 100;
+        }
+
+        .box3 {
+            background-color: rebeccapurple; position: absolute; top:150px; left:150px;
+        }
+
+        .box4 {
+            background-color: orangered; position: absolute; top:0; left:0;
+        }
+
+        .box5 {
+            background-color: rgb(0, 128, 21);
+            position: absolute;
+            z-index: 10;
+            /* height: 400px;
+            width: 400px; */
+            /* right: 0; */
+            /* bottom: 0; */
+            /* top: 0; */
+        }
+
+        .posi-sticky {
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <input type="date" name="" id="">
+    <br>
+    <br>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="wrapper">
+        <p class="posi-sticky">something</p>
+
+        <div class="box3">box3</div>
+        <div class="box4">
+            box4
+        </div>
+    </div>
+    <div class="box5">box5</div>
+    <div class="box3">box3</div>
+    <div class="box3">box3</div>
+</body>
+
+</html>
