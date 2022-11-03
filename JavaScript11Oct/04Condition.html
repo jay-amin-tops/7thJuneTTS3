@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="inp">
+    <button onclick="btnclick('a')">Delete</button>
+    <script>
+        function btnclick(params) {
+            // alert("are u sure??")
+            // if (confirm("are u sure??")) {
+            //     if (confirm("are u double sure??")) {
+            //         alert("Data Deleted")
+            //     }else{
+            //         alert("to su kam click kryu?")
+            //     }
+            // }else{
+            //     alert("safe")
+            // }
+            
+            Marks = document.getElementById("inp").value
+            if (Marks >= 0 && Marks <= 100) {
+                if (Marks > 50) {
+                    if (Marks >= 50 && Marks < 60) {
+                        document.writeln("pass class")
+                        console.log("pass class");
+                    } else if(Marks >= 60 && Marks < 70){
+                        console.log("frst class");
+                    }else if(Marks >= 70 && Marks < 80){
+                        document.writeln("Dist class")
+                        console.log("Dist class");
+                    }else if(Marks >= 80 && Marks < 90){
+                        console.log("Dist+ class");
+                    }else if(Marks >= 90 && Marks <= 100){
+                        console.log("more then enough class");
+                    }else{
+                        console.log("Try again");
+                    }
+                }
+            } else {
+                console.log("Invalid Marks ");
+            } 
+        }
+
+        var Lang= 2
+        switch (Lang) {
+            case 1:
+                console.log("Gujarati");
+                break;
+            case 2:
+                console.log("Hindi");
+                break;
+            case 3:
+                console.log("tamil");
+                break;
+            case 4:
+                console.log("marathi");
+                break;
+        
+            default:
+                break;
+        }
+    </script>
+</body>
+</html>
