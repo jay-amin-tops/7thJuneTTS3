@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>jQuery</h2>
+    <p>jQuery is a fast, small, and feature-rich JavaScript library</p>
+    <input type="text" name="username" onblur="getdata()" id="username">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+        function getdata() {
+            // let inp = $("#username")
+            let inp = $("#username").val();
+            console.log(inp);
+        }
+    </script>
+</body>
+</html>

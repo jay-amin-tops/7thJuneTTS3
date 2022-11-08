@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>User Name</td>
+                <td>
+                    <input type="text" name="username" onblur="checkrequired(this,'unameError','User name is required')" id="username" required> 
+                    <!-- <span>*</span>  -->
+                    <span id="unameError">*</span> 
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" onblur="checkrequired(this,'passError','Password is required')" name="password" id="" required>
+                    <span id="passError">*</span> 
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" onkeyup="checkemail(this,'emailError')" onblur="checkrequired(this,'emailError','Email is required')" name="email" id="email" required>
+                    <span id="emailError">*</span> 
+                </td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td>
+                    <!-- <input type="tel" onkeypress="console.log(event.which)" name="mobile" onblur="checkrequired(this,'mobileError','Mobile number is required')" id="mobile" required> -->
+                    <input type="tel" onkeypress="return (event.which >=48 && event.which <=57 )" name="mobile" onblur="checkrequired(this,'mobileError','Mobile number is required')" id="mobile" required>
+                    <span id="mobileError"></span>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" name="registration" id="">
+    </form>
+    <script>
+        function checkemail(e,spnid) {
+            // let pattern = /^([a-z-A-Z0-9\.\-\_])+\@+([])$/;
+            let pattern = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            // console.log(pattern.test(e.value));
+            
+            if (pattern.test(e.value)) {
+                document.getElementById(spnid).innerHTML = "Valid";
+            }else{
+                document.getElementById(spnid).innerHTML = "Invalid";
+            }
+        }
+        function checkrequired(kuchbhi,spnid,msggmete) {
+            if (kuchbhi.value == "") {
+                // document.getElementById(spnid).innerHTML = "<b>This field is required</b>";
+                document.getElementById(spnid).innerHTML = msggmete;
+            }else{
+                document.getElementById(spnid).innerHTML = "";
+            }
+        }
+    </script>
+</body>
+</html>

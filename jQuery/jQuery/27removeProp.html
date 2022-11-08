@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>removeProp demo</title>
+  <style>
+  img {
+    padding: 10px;
+  }
+  div {
+    color: red;
+    font-size: 24px;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+ 
+  <p></p>
+ 
+<script>
+para = $( "p" );
+para
+  .prop( "luggageCode", 1234 )
+  .append( "The secret luggage code is: ", String( para.prop( "luggageCode" ) ), ". " )
+  .removeProp( "luggageCode" )
+  .append( "Now the secret luggage code is: ", String( para.prop( "luggageCode" ) ), ". " );
+</script>
+ 
+</body>
+</html>

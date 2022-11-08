@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery-3.6.1.js"></script>
+    <!-- <script defer src="custom.js"></script> -->
+    <style>
+        .text-primary{
+            color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="my-data">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus reiciendis, non ex, veritatis accusantium
+        quas sapiente nemo soluta fugit quisquam recusandae fuga distinctio beatae mollitia dolore dicta optio
+        architecto porro?</p>
+        <!-- <button onclick="changeClass()">click me</button> -->
+    <button id="btn">Add Class</button>
+    <button onclick="removeClass()">remove class</button>
+    <button id="togglecls">Toggle class</button>
+    <script>
+        document.getElementById('btn').addEventListener("click", function () {
+            $("#my-data").addClass("text-primary")
+        })
+        $("#togglecls").click( function () {
+            $("#my-data").toggleClass("text-primary")
+            // console.log("called");
+        });
+        function removeClass(params) {
+            $("#my-data").removeClass("text-primary")
+        }
+
+    </script>
+</body>
+
+</html>

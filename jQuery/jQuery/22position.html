@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>position demo</title>
+  <style>
+  div {
+    padding: 15px;
+  }
+  p {
+    margin-left: 10px;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+ 
+<div>
+  <p>Hello</p>
+</div>
+<p></p>
+ 
+<script>
+var p = $( "p" ).first();
+var position = p.position();
+$( "p" ).last().text( "left: " + position.left + ", top: " + position.top );
+</script>
+ 
+</body>
+</html>

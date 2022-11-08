@@ -1,0 +1,41 @@
+<!-- The .detach() method is the same as .remove(), except that .detach() keeps all jQuery data associated with the removed elements. This method is useful when removed elements are to be reinserted into the DOM at a later time. -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>detach demo</title>
+  <style>
+  p {
+    background: yellow;
+    margin: 6px 0;
+  }
+  p.off {
+    background: black;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+ 
+<p>Hello</p>
+how are
+<p>you?</p>
+<button>Attach/detach paragraphs</button>
+ 
+<script>
+$( "p" ).click(function() {
+  $( this ).toggleClass( "off" );
+});
+var p;
+$( "button" ).click(function() {
+  if ( p ) {
+    p.appendTo( "body" );
+    p = null;
+  } else {
+    p = $( "p" ).detach();
+  }
+});
+</script>
+ 
+</body>
+</html>

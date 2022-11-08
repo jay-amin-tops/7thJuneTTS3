@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>css demo</title>
+  <style>
+  div {
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    float: left;
+  }
+  #box1 {
+    width: 50px;
+    color: yellow;
+    background-color: blue;
+  }
+  #box2 {
+    width: 80px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 99, 30);
+  }
+  #box3 {
+    width: 40px;
+    color: #fcc;
+    background-color: #123456;
+  }
+  #box4 {
+    width: 70px;
+    background-color: #f11;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+ 
+<p id="result">&nbsp;</p>
+<div id="box1">1</div>
+<div id="box2">2</div>
+<div id="box3">3</div>
+<div id="box4">4</div>
+ 
+<script>
+$( "div" ).click(function() {
+  var html = [ "The clicked div has the following styles:" ];
+ 
+  var styleProps = $( this ).css([
+    "width", "height", "color", "background-color"
+  ]);
+  // $(this).css("color") // get color of this ele
+  // $(this).css("color","red") // set red color for thid element
+  // console.log(styleProps);
+  // return false;
+  $.each( styleProps, function( prop, value ) {
+    console.log(prop);
+    html.push( prop + ": " + value );
+  });
+ 
+  $( "#result" ).html( html.join( "<br>" ) );
+});
+</script>
+ 
+</body>
+</html>

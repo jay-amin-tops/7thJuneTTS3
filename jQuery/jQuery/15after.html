@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>after demo</title>
+  <style>
+  p {
+    background: yellow;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+ 
+<p>I would like to say: </p>
+ 
+<script>
+$( "p" ).after( document.createTextNode( "Hello" ) );
+</script>
+ 
+</body>
+</html>

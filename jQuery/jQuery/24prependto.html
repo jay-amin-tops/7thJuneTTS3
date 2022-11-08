@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>prependTo demo</title>
+  <style>
+  div {
+    background: yellow;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+ 
+<div id="foo">FOO!</div>
+<span>I have something to say... </span>
+ 
+<script>
+$( "span" ).prependTo( "#foo" );
+</script>
+ 
+</body>
+</html>

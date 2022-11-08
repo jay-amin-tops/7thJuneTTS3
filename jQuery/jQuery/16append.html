@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>appendTo demo</title>
+  <style>
+  #foo {
+    background: yellow;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+ 
+<span>I have nothing more to say... </span>
+ 
+<div id="foo">FOO! </div>
+ 
+<script>
+$( "span" ).appendTo( "#foo" );
+</script>
+ 
+</body>
+</html>

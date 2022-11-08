@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>innerWidth demo</title>
+  <style>
+div {
+width: 60px;
+padding: 10px;
+height: 50px;
+float: left;
+margin: 5px;
+background: red;
+cursor: pointer;
+}
+.mod {
+background: blue;
+cursor: default;
+}
+  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+ 
+<div>d</div>
+<div>d</div>
+<div>d</div>
+<div>d</div>
+<div>d</div>
+ 
+<script>
+var modWidth = 60;
+$( "div" ).one( "click", function() {
+$( this ).innerWidth( modWidth ).addClass( "mod" );
+modWidth -= 8;
+});
+</script>
+ 
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!-- In an HTML document, .html() can be used to get the contents of any element. If the selector expression matches more than one element, only the first match will have its HTML content returned. Consider this code: -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>html demo</title>
+  <style>
+  div {
+    color: blue;
+    font-size: 18px;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+ 
+<div></div>
+<div></div>
+<div></div>
+ 
+<script>
+$( "div" ).html( "<b>Wow!</b> Such excitement..." );
+$( "div b" )
+  .append( document.createTextNode( "!!!" ) )
+  .css( "color", "red" );
+</script>
+ 
+</body>
+</html>
