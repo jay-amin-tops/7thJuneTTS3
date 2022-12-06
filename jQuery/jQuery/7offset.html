@@ -40,13 +40,14 @@
   </div>
 
   <script>
+    username = "TOPS"
+    console.log(username+"SG");
     $("*", document.body).click(function (event) {
       var offset = $(this).offset();
       console.log(offset);
       // return false;
       event.stopPropagation();
-      $("#result").text(this.tagName +
-        " coords ( " + offset.left + ", " + offset.top + " )");
+      $("#result").text(this.tagName + " coords ( " + offset.left + ", " + offset.top + " )");
     }
     );
   </script>

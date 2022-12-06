@@ -22,11 +22,15 @@
   <input type="checkbox">
   <input type="checkbox">
   <input type="checkbox" checked="checked">
- 
+  <input type="button" name="btn" id="btn" value="check all" id="">
 <script>
-$( "input[type='checkbox']" ).prop({
-  disabled: true
-});
+$("#btn").click(function () {
+  $( "input[type='checkbox']" ).prop({
+    // disabled: true,
+    checked:true
+  });
+  
+})
 </script>
  
 </body>

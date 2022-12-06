@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 5px solid grey;
+            padding: 50px;
+            background-color: brown;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box">test</div>
+    <button id="click">Click</button>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+    console.log($(".box").width());
+    console.log($(".box").innerWidth());
+    console.log($(".box").height());
+    console.log($(".box").innerHeight());
+    console.log($(".box").offset());
+    $("#click").click(function () {
+        $(".box").width(100)
+        $(".box").innerHeight(500);
+    })
+</script>
+</body>
+
+</html>

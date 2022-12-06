@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: pink;
+        }
+
+        ::-moz-placeholder {
+            /* Firefox 19+ */
+            color: pink;
+        }
+
+        :-ms-input-placeholder {
+            /* IE 10+ */
+            color: pink;
+        }
+
+        :-moz-placeholder {
+            /* Firefox 18- */
+            color: pink;
+        }
+
+        input::placeholder {
+            color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>jQuery</h2>
+    <p>jQuery is a fast, small, and feature-rich JavaScript library</p>
+    <input type="text" name="username" placeholder="Enter User Name" onblur="getdata()" id="username">
+    <input type="button" name="addinpbtn" value="+" id="addinpbtn">
+    <div class="disp"></div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+        $("#addinpbtn").click(function () {
+            // console.log("called");
+            // inp = '<input type="text">'
+            // inp = "<input type="text">"
+            var input = document.createElement("input");
+            input.type = "text";
+            input.className = "my-class"; // set the CSS class
+            console.log(input);
+            inp = `<input type="text">`
+            $(".disp").append(input)
+        })
+        // function getdata() {
+        //     // let inp = $("#username")
+        //     let inp = $("#username").val();
+        //     console.log(inp);
+        // }
+    </script>
+</body>
+
+</html>

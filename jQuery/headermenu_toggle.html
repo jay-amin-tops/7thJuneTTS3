@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        div {
+            border: 1px solid;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans Regular'
+        }
+
+        #main-header {
+            background-color: #212121;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+        }
+
+        .col {
+            /* flex: 1 0 0; */
+        }
+
+        #main-header a {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            padding: 7px 15px;
+            font-size: 14px;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        .top-menu {
+            background-color: #000000;
+        }
+
+        .logo {
+            width: 20%;
+        }
+
+        .menu {
+            width: 100%;
+            display: none;
+        }
+
+        .ml-a {
+            margin-left: auto;
+        }
+
+        .search {
+            width: 650px;
+            padding: 10px;
+            border-radius: 3px;
+            background-color: #3d3d3d9d;
+            border: 0;
+        }
+
+        .t-menu {
+            margin-right: 55px;
+        }
+
+        .main-menu  {
+            background-color: #000000;
+        }
+        .main-menu a {
+            /* padding: 20px !important; */
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .logo {
+            text-align: center;
+            line-height: 85px;
+        }
+
+        .logo img {
+            vertical-align: middle;
+            height: 50px;
+            width: 80px;
+        }
+        .custom-bar{
+            color: white;
+            margin-right: 50px;
+            font-size: 30px;
+        }
+        .menu-media{
+            display: block;
+            position: fixed;
+            top: 88px;
+        }
+        .menu-media li{
+            display: block;
+            text-align: center;
+        }
+        .hide-in-media{
+            display: none;
+        }
+        .t-menu-wrapper{
+            margin: auto;
+        }
+        @media (min-width:992px) {
+            .menu {
+                width: 80%;
+                display: block;
+            }
+            .hide-in-media{
+                display: block;
+            }
+            .t-menu-wrapper{
+                margin-left: auto;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="row">
+            <div class="logo">
+                <img src="group.svg" alt="">
+            </div>
+            <div class="menu" id="menu">
+                <div class="top-menu">
+                    <div class="row">
+                        <div class="col hide-in-media">
+                            <a href="#">
+                                Tata CLiQ luxury
+                            </a>
+                        </div>
+                        <div class="col t-menu-wrapper ">
+                            <nav class="t-menu">
+                                <ul>
+                                    <li><a href="#">CLiQ Cash</a></li>
+                                    <li><a href="#">Gift Card</a></li>
+                                    <li><a href="#">CLiQ care</a></li>
+                                    <li><a href="#">track Order</a></li>
+                                    <li><a href="#">sign in/ sign up</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-menu">
+                    <nav>
+                        <ul>
+                            <li><a href="#">categories <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li><a href="#">brands <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li><a href="#"><input placeholder="Search for categories" class="search" type="text"
+                                        name="" id=""></a></li>
+                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                        </ul>
+                    </nav>
+
+
+                </div>
+            </div>
+            <i id="bars" class="fa fa-bars custom-bar ml-a"></i>
+        </div>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById("bars").addEventListener("click",function () {
+            $("#menu").toggleClass('menu-media')
+        })
+        $(".top-menu li").click(function () {
+            $("#menu").toggleClass('menu-media')
+        })
+    </script>
+</body>
+
+</html>
